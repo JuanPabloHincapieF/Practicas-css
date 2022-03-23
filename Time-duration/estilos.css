@@ -1,0 +1,39 @@
+*{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.container{
+    background-color: #000;
+    padding: 30px;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #0ff;
+    transition-property: left;
+    transition-duration: 1s;
+    position: relative;
+    left:0;
+}
+
+.container:hover > .caja{
+    left: 80%;
+}
+.caja:first-child{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+}
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+}

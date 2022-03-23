@@ -1,0 +1,40 @@
+*{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle,#fff,#9ff);
+    padding: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    grid-gap: 7px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+img:hover{
+    transform:translateY(-5px) scale(1.06);
+}
+
+img:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+img:nth-child(6){
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+img:nth-child(15){
+    grid-column: span 2;
+    grid-row: span 2;
+}
