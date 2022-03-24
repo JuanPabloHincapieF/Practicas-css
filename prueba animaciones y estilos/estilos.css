@@ -1,0 +1,44 @@
+* {
+  font-size: 20px;
+  font-family: "Courier Prime", monospace;
+}
+.container {
+  width: 800px;
+  height: 500px;
+  margin: 100px auto;
+  display: flex;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  border: 3px solid #000;
+  border-radius: 5px;
+  z-index: 5;
+  background-image: url(cosas/fondo.png);
+  background-position: -100px -100px;
+}
+
+img {
+  position: absolute;
+  object-fit: cover;
+  left: 170px;
+  top: -100px;
+  opacity: 0.5;
+}
+.imagen {
+  object-fit: contain;
+}
+.item {
+  background-color: aquamarine;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  justify-items: center;
+  border: 2px solid #000;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.item:hover {
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -5px 5px 0px 0px #000;
+}
